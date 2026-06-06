@@ -1,1 +1,29 @@
-# system
+Program– 01 :Distance between two points
+Algorithm:
+Step 1: [Start]
+Step 2: [Input the coordinates of the first point (x1, y1)]
+Read first input (x1,y1)
+Step 3: [Input the coordinates of the second point (x2, y2)]
+Read second input (x2,y2)
+Step 4: [Compute the distance]
+distance = sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1))
+Step 5: [Display the distance]
+Print distance
+Step 6: [Stop]
+
+C Source Code:
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+void main()
+{
+  float x1, y1, x2, y2, distance;
+  clrscr();
+  printf("Enter x1 and y1 (coordinates of the first point): ");
+  scanf("%f %f", &x1, &y1);
+  printf("Enter x2 and y2 (coordinates of the second point): ");
+  scanf("%f %f", &x2, &y2);
+  distance = sqrt((x2- x1)*(x2- x1) + (y2- y1)*(y2- y1));
+  printf("The straight-line distance between the two points is: %.2f\n", distance);
+  getch();
+}
